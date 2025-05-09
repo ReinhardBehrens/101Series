@@ -715,10 +715,56 @@ console.log(seperator);
     console.log(`Called Immediately, keeping variables out of global scrope ${secretvar}`);
 });
 
+// Example 2 using normal function notation
 (function(){
     let secretvar = "Heidi";
     console.log(`Called immediately as a function, variable ${secretvar} `);
 }
 );
+
+// Why IIFE?
+// Variable leakage prevention!! Be careful, Javascript wil assign 'secret' a global scope, because you
+// did not use let or const or var. Note, that but declaring a function expression like (function(){}); you 
+// encapsulate the function outside the global scope.
+function myFunc() {
+  secret = "oops, I'm global!";
+}
+
+myFunc();
+
+console.log(secret); // "oops, I'm global!" — this leaked!
+
+/* Exercise 53 - Recursion – Factorial */
+console.log(seperator);
+console.log(`Exercise 53 - Recursion – Factorial`);
+console.log(seperator);
+
+// Note: This function calls itself (recursion) until it reaches 0
+
+function factorial(n)
+{
+    if(n === 0) return 1; // If 0, then returns out of the function, else it will link to itself and continue calculating a factorial
+    return n*factorial(n-1);
+}
+
+let result = factorial(5);
+console.log(result);
+
+console.log(seperator);
+
+/* Exercise 54 - Debouncing Function */
+console.log(seperator);
+console.log(`Exercise 54 - Debouncing Function`);
+console.log(seperator);
+
+function debounce(fn, delay){
+    let timer;
+
+    return function(...args){
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this,args), delay);
+    }
+
+}
 
 console.log(seperator);

@@ -1,0 +1,102 @@
+Exercise,Description
+1. Variables and Data Types,Write a program that declares variables of different data types and prints their types.
+2. Arithmetic Operations,"Write a program to perform addition, subtraction, multiplication, and division on two numbers."
+3. Even or Odd,Write a function that checks whether a given number is even or odd.
+4. Largest of Three Numbers,Write a function that finds the largest of three given numbers.
+5. FizzBuzz,"Write a program that prints numbers from 1 to 100. For multiples of 3, print 'Fizz', for multiples of 5, print 'Buzz', and for multiples of both, print 'FizzBuzz'."
+6. Prime Number Check,Write a function that checks if a given number is prime.
+7. Factorial,Write a function to find the factorial of a given number using recursion.
+8. Reverse a String,Write a function to reverse a given string.
+9. Palindrome Check,Write a function that checks if a given string is a palindrome.
+10. Count Vowels,Write a function that counts the number of vowels in a given string.
+11. Sum of Array Elements,Write a function to find the sum of all elements in an array.
+12. Find Maximum in Array,Write a function that finds the maximum element in an array.
+13. Find Minimum in Array,Write a function that finds the minimum element in an array.
+14. Remove Duplicates from Array,Write a function that removes duplicate elements from an array.
+15. Reverse an Array,Write a function to reverse an array.
+16. Merge Two Arrays,Write a function to merge two arrays and remove duplicates.
+17. Sort an Array,Write a function to sort an array in ascending order.
+18. Check Anagram,Write a function that checks if two given strings are anagrams.
+19. Find Second Largest Number,Write a function to find the second largest number in an array.
+20. Fibonacci Series,Write a function to generate the Fibonacci sequence up to n terms.
+21. Object Properties,"Create an object with properties (name, age, city) and print each property."
+22. Object Methods,Create an object with a method that prints a greeting message.
+23. Iterate Over Object,Write a program to iterate over all properties of an object.
+24. Object Comparison,Write a function that checks if two objects have the same properties and values.
+25. Deep Clone Object,Write a function that creates a deep copy of a given object.
+26. Arrow Functions,Rewrite a function using ES6 arrow function syntax.
+27. Default Parameters,Write a function that uses default parameters.
+28. Destructuring Arrays,Write a program that extracts values from an array using destructuring.
+29. Destructuring Objects,Write a program that extracts properties from an object using destructuring.
+30. Spread and Rest Operators,Write a function that merges two objects using the spread operator.
+31. Promise Example,Write a function that returns a promise which resolves after 2 seconds.
+32. Async/Await,Write an async function that waits for a promise to resolve.
+33. Fetch API,Write a function that fetches data from an API using `fetch`.
+34. Local Storage,Write a program that stores and retrieves data from localStorage.
+35. DOM Manipulation,Write a program that changes the text of a paragraph when a button is clicked.
+36. Event Listener,Write a program that logs a message when a button is clicked.
+37. Callback Functions,Write a function that takes another function as a callback and executes it.
+38. Closures,Write a function that demonstrates closures in JavaScript.
+39. Prototypes,Create a constructor function and add methods using prototypes.
+40. Class and Inheritance,Create a class `Person` and extend it to a class `Student`.
+41. Set Timeout and Set Interval,Write a program that logs a message every 3 seconds using `setInterval`.
+42. Error Handling,Write a function that handles errors using `try...catch`.
+43. Regular Expressions,Write a program that validates an email using regex.
+44. Map Method,Write a function that doubles each element of an array using `map`.
+45. Filter Method,Write a function that filters out numbers greater than 10 from an array.
+46. Reduce Method,Write a function that sums all elements in an array using `reduce`.
+47. Find Method,Write a function that finds the first even number in an array using `find`.
+48. Sorting Objects,Write a function that sorts an array of objects based on age.
+49. Debouncing,Implement a debounced function that waits before executing.
+50. Throttling,Implement a throttled function that limits execution rate.
+51. Deep Copy an Object,Write a function that creates a deep copy of an object.
+52. Merge Two Sorted Arrays,Write a function to merge two sorted arrays into one sorted array.
+53. Flatten a Nested Array,Write a function to flatten a nested array into a single array.
+54. Generate a Random Hex Color,Write a function that generates a random hex color code.
+55. Shuffle an Array,Write a function that randomly shuffles an array.
+56. Find Intersection of Two Arrays,Write a function that finds the common elements between two arrays.
+57. Find the Factorial of a Large Number,Write a function to calculate factorials for large numbers using BigInt.
+58. Count the Occurrences of Each Character in a String,Write a function that counts occurrences of each character in a given string.
+59. Convert a String to CamelCase,Write a function that converts a given string to camelCase format.
+60. Convert a String to Snake_Case,Write a function that converts a given string to snake_case format.
+61. Generate a UUID,Write a function that generates a UUID (Universally Unique Identifier).
+62. Implement a Simple Memoization Function,Write a function that caches results of previous function calls to improve performance.
+63. Implement a Simple Debounce Function,Write a function that delays execution of another function until a specified time has passed.
+64. Implement a Simple Throttle Function,Write a function that limits how frequently a function can execute.
+65. Convert an Object to a Query String,Write a function that converts a JavaScript object into a URL query string.
+66. Convert a Query String to an Object,Write a function that converts a URL query string into a JavaScript object.
+67. Find All Subsets of an Array,Write a function that generates all possible subsets of a given array.
+68. Find All Permutations of a String,Write a function that generates all permutations of a given string.
+69. Find the First Non-Repeating Character in a String,Write a function that returns the first non-repeating character in a given string.
+70. Find the Longest Palindromic Substring,Write a function that finds the longest palindromic substring in a given string.
+71. Implement a Linked List,Write a class that implements a simple singly linked list.
+72. Implement a Stack Using an Array,Write a class that implements a stack using an array.
+73. Implement a Queue Using an Array,Write a class that implements a queue using an array.
+74. Implement a Binary Search Algorithm,Write a function that performs binary search on a sorted array.
+75. Implement a Recursive Fibonacci Function,Write a recursive function to generate Fibonacci numbers.
+76. Implement a Breadth-First Search (BFS),Write a function to traverse a graph using the breadth-first search algorithm.
+77. Implement a Depth-First Search (DFS),Write a function to traverse a graph using the depth-first search algorithm.
+78. Implement a Simple Hash Table,Write a class that implements a simple hash table.
+79. Validate an Email Address Using Regex,Write a function that validates an email address using regular expressions.
+80. Validate a Credit Card Number Using Luhn Algorithm,Write a function that validates a credit card number using the Luhn algorithm.
+81. Implement a Basic Web Scraper Using Fetch,Write a function that fetches and extracts data from a webpage using JavaScript's Fetch API.
+82. Convert RGB Color to Hex,Write a function that converts an RGB color value to a hex color value.
+83. Convert Hex Color to RGB,Write a function that converts a hex color value to an RGB color value.
+84. Detect a Cycle in a Linked List,Write a function that detects if a linked list contains a cycle.
+85. Find the Nth Node from the End of a Linked List,Write a function that returns the nth node from the end of a singly linked list.
+86. Implement a Simple LRU Cache,Write a function that implements a least recently used (LRU) cache.
+87. Implement a Trie Data Structure,Write a class that implements a simple trie data structure for fast word searches.
+88. Find the Maximum Subarray Sum Using Kadaneâ€™s Algorithm,Write a function that finds the maximum subarray sum using Kadane's Algorithm.
+89. Implement a Min Heap,Write a class that implements a min heap data structure.
+90. Implement a Max Heap,Write a class that implements a max heap data structure.
+91. Find the Median of Two Sorted Arrays,Write a function that finds the median of two sorted arrays.
+92. Implement a Simple Rate Limiter,Write a function that limits how frequently a function can be executed.
+93. Implement a Sliding Window Maximum,Write a function that finds the maximum value in each sliding window of an array.
+94. Implement a Simple Text Auto-Completion System,Write a function that suggests words based on user input using a prefix tree (Trie).
+95. Implement a Simple Blockchain Data Structure,Write a class that implements a simple blockchain structure for storing transactions.
+96. Implement a Simple Observer Pattern,Write a function that implements an observer pattern for event-driven programming.
+97. Implement a Simple Singleton Pattern,Write a function that implements a singleton pattern for maintaining a single instance of an object.
+98. Implement a Simple Publish-Subscribe Pattern,Write a function that implements a publish-subscribe messaging pattern.
+99. Implement a Simple Proxy Pattern,Write a function that implements a proxy pattern to control access to an object.
+100. Implement a Basic Machine Learning Model,Write a function that trains a simple linear regression model using JavaScript.
+101. Final Challenge,Solve a real-world problem using JavaScript and modern ES6+ features.
