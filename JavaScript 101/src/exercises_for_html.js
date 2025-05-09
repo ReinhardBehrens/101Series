@@ -36,7 +36,7 @@ function removeElementFromDOM(elementID)
 }
 
 /*
-    Exercise 50 - DOMContentLoaded Event
+    Exercise 50 - DOMContentLoaded Event (Memorize the structure used later during promises)
 */
 function isDOMReady()
 {

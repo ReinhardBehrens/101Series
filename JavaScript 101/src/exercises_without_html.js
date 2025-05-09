@@ -704,3 +704,21 @@ console.log(counter()); // 2
 
 console.log(seperator);
 
+/* Exercise 52 - Immediately Invoked Function Expression (IIFE)) */
+console.log(seperator);
+console.log(`Exercise 52 - Immediately Invoked Function Expression (IIFE)`);
+console.log(seperator);
+
+// Example 1 using Arrow notation
+(()=>{
+    let secretvar = "Heidi";
+    console.log(`Called Immediately, keeping variables out of global scrope ${secretvar}`);
+});
+
+(function(){
+    let secretvar = "Heidi";
+    console.log(`Called immediately as a function, variable ${secretvar} `);
+}
+);
+
+console.log(seperator);
