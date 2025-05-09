@@ -12,7 +12,8 @@ I coded all the samples independently from the actual PDF document, so there are
 differences, so its not 100% exactly the same. So if you copy and paste (Which you should not
 be doing) code from the booklet, error could exist.\n\n `);
 
-let seperator = "---------------------------------------------------------------------------";
+let seperator =      "---------------------------------------------------------------------------";
+let seperatorType2 = "***************************************************************************";
 /* Exercise 1 - Declare and Log a Variable */
 console.log(seperator);
 console.log(`Exercise 1 - Declare and Log a Variable`);
@@ -582,8 +583,124 @@ console.log(seperator);
 console.log(`Exercise 43 - Create an Element and Append`);
 console.log(seperator);
 
-let p = document.createElement('p');
-p.textContent = "My Text Value";
-document.body.appendChild(p);
+console.log(seperator);
+
+/* Exercise 45 - Use setTimeout*/
+console.log(seperator);
+console.log(`Exercise 45 - Use setTimeout`);
+console.log(seperator);
+
+// setTimeout(()=>{
+//     console.log("Timeout testing printed after 1second");
+// },1000);
 
 console.log(seperator);
+
+/* Exercise 46 - Use setInterval and clearInterval*/
+console.log(seperator);
+console.log(`Exercise 46 - Use setInterval and clearInterval`);
+console.log(seperator);
+
+//let count = 0;
+
+// These two functions setInterval and clearInterval works together as 
+// setInterval creates a referencable inverval ID used bu clearInterval 
+// to cause a Timeout and stop the setInterval function
+// let intervalID = setInterval(()=>{
+//     count++;
+//     console.log("[IntervalID : "+intervalID + "]" + count);
+
+//     if(count===5)
+//         clearInterval(intervalID);
+// },1000);
+
+console.log(seperator);
+
+/* Exercise 47 - Fetch API – Basic GET Request*/
+console.log(seperator);
+console.log(`Exercise 47 - Fetch API – Basic GET Request`);
+console.log(seperator);
+
+// Note: This exercise uses Promise that will be explained later. For now just learn the syntax.
+console.log(seperatorType2);
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Data fetched successfully:', data);
+    })
+    .catch(error => {
+      console.error('There was a problem fetching the data:', error);
+    });
+console.log(seperatorType2);
+console.log(seperator);
+
+/* Exercise 48 - Async/Await Fetch */
+console.log(seperator);
+console.log(`Exercise 48 - Async/Await Fetch`);
+console.log(seperator);
+
+//Reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+async function loadData() {
+    const url = "https://jsonplaceholder.typicode.com/users/1";
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+  
+      const json = await response.json();
+      console.log(`Await Example : \n${JSON.stringify(json, null, 2)}\n`);
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
+
+loadData();
+
+console.log(seperator);
+
+/* Exercise 49 - Handle Errors in Fetch*/
+console.log(seperator);
+console.log(`Exercise 49 - Handle Errors in Fetch`);
+console.log(seperator);
+
+async function getUserData(){
+    try{
+        let response = await fetch("badurl");
+        let httpResStatus = await response.ok;
+        if(!httpResStatus)
+        {
+            console.log(`HTTP Status Code != 200 / Returned ${response.status}` );
+        }
+    }catch(error){
+        console.error(error);
+    }
+}
+
+getUserData();
+
+console.log(seperator);
+
+/* Exercise 51 - Closure Example (Important to understand!!!!) */
+console.log(seperator);
+console.log(`Exercise 51 - Closure Example`);
+console.log(seperator);
+
+function createCounter() {
+    let count = 0;
+    return function() { /* Function is returned to the variable as s reference and copies the entire environment as the count variable is from its outer scope. Note, there are similarities by appearance to a class and private variables, but they are not the same. */
+        return ++count;
+    };
+}
+const counter = createCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2
+
+console.log(seperator);
+

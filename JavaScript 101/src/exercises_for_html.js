@@ -34,3 +34,22 @@ function removeElementFromDOM(elementID)
     let el = document.getElementById(elementID);
     el.remove();
 }
+
+/*
+    Exercise 50 - DOMContentLoaded Event
+*/
+function isDOMReady()
+{
+    return new Promise((resolve => {
+            if(document.readyState == "loading"){
+                document.addEventListener("DOMContentLoaded", () => resolve(true) );
+            }
+            else{
+                resolve = true;
+            }
+    }));
+}
+
+isDOMReady().then(()=> {
+    console.log("DOM Ready");
+});
