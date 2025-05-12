@@ -740,6 +740,7 @@ console.log(`Exercise 53 - Recursion – Factorial`);
 console.log(seperator);
 
 // Note: This function calls itself (recursion) until it reaches 0
+
 function factorial(n)
 {
     if(n === 0) return 1; // If 0, then returns out of the function, else it will link to itself and continue calculating a factorial
@@ -756,6 +757,10 @@ console.log(seperator);
 console.log(`Exercise 54 - Debouncing Function`);
 console.log(seperator);
 
+/*
+    Its worth explaining this function a little, the fn is the function parsed, then the delay.
+*/
+
 function debounce(fn, delay){
     let timer;
 
@@ -766,61 +771,12 @@ function debounce(fn, delay){
 
 }
 
-// Implementation to limit the search on a searchbox
-// Note: Search for the output it should be after one of the log outputs of the async calls.
-const debouncedSearch = debounce(function(query) {
-  console.log("Searching for:", query);
+const decounceSearch = debounce(function(query){
+    console.log("Searching for: ", query);
 }, 300);
 
-// Simulating typing
-debouncedSearch("a");
-debouncedSearch("ab");
-debouncedSearch("abc"); // Only this triggers the actual search, 300ms after last call
-
-console.log(seperator);
-
-/* Exercise 54 - Throttle Function */
-console.log(seperator);
-console.log(`Exercise 54 - Throttle Function`);
-console.log(seperator);
-
-function throttle(fn, delay){
-    let last = 0;
-    return {
-            innerThrottleCall: (...args) => {
-                let now = Date.now();
-                if(now-last >= delay)
-                {
-                    fn.apply(this,args);
-                    console.log("Throttled function last at:" + now);
-                    last = now;
-                }
-                else
-                {
-                    console.log("Throttled cannot be called too soon.");
-                }
-            },
-            showLastCalled : () => { return last; }
-    }
-}
-
-function causeBlockingDelay(ms){
-    console.log("causeBlockingDelay");
-    let start = Date.now();
-    while(Date.now()- start < ms)
-    {
-    }
-}
-
-let throttleFunction = throttle(function(query){
-      console.log("THROTTLE FUNCTION CALLED");
-}, 500);
-
-setTimeout(()=>throttleFunction.innerThrottleCall(i),100);
-console.log("throttleFunction {last} -> " + throttleFunction.showLastCalled());
-causeBlockingDelay(100);
-causeBlockingDelay(100);
-setTimeout(()=>throttleFunction.innerThrottleCall(i),100);
-console.log("throttleFunction {last} -> " + throttleFunction.showLastCalled());
+debounceSearch('a');
+debounceSearch('ab');
+debounceSearch('abc'); // This is the function that is triggered
 
 console.log(seperator);
