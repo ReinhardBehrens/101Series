@@ -779,9 +779,9 @@ debouncedSearch("abc"); // Only this triggers the actual search, 300ms after las
 
 console.log(seperator);
 
-/* Exercise 54 - Throttle Function */
+/* Exercise 55 - Throttle Function */
 console.log(seperator);
-console.log(`Exercise 54 - Throttle Function`);
+console.log(`Exercise 55 - Throttle Function`);
 console.log(seperator);
 
 function throttle(fn, delay){
@@ -822,5 +822,12 @@ causeBlockingDelay(100);
 causeBlockingDelay(100);
 setTimeout(()=>throttleFunction.innerThrottleCall(i),100);
 console.log("throttleFunction {last} -> " + throttleFunction.showLastCalled());
+
+console.log(seperator);
+
+/* Exercise 56 - Promisify a Callback Function */
+console.log(seperator);
+console.log(`Exercise 56 - Promisify a Callback Function`);
+console.log(seperator);
 
 console.log(seperator);
