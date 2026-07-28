@@ -1,4 +1,4 @@
-# 101Series
+# 101Series - Cancelled, AI does all the coding no demand :(
 This is a repository for all the source code of the 101 Series of booklets for code exercises.
 
 The "101 Series" Booklets are concise, practical programming guides designed for hands-on learning. Each booklet—covering JavaScript, TypeScript, React, and React Native—contains 101 curated exercises with detailed answers. These exercises range from beginner to intermediate levels and focus on real-world coding challenges to reinforce core concepts, improve problem-solving skills, and boost confidence in building modern web and mobile applications.
